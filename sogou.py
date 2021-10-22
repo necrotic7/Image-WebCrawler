@@ -44,4 +44,4 @@ def getSogouImag(path):
             m = m + 1
             print('Download complete !')
  
-getSogouImag('./sogou-imgs/bending/')
+getSogouImag('./image/')

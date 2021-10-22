@@ -31,7 +31,7 @@ for count, i in enumerate(range(0,350, 35)):
 		x=1
 		for link in links:
 			# print('圖片連結：', link)
-			local = os.path.join('/Users/ziv.wu/Desktop/WebCrawler/bing-imgs/bending/%s-%s.jpg' %(count+1, x))
+			local = os.path.join('./image/%s-%s.jpg' %(count+1, x))
 			urllib.request.urlretrieve(link,local) #link是下載的網址 local是儲存圖片的檔案位址
 			x+=1
 			print('已下載%s-%s.jpg'%(count+1, x))
