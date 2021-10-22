@@ -43,7 +43,7 @@ You can change the file name by changing 'x' & 'count', but be aware that they s
 
 Images will save in the path blow:
 ```
-local = os.path.join('./image/bing-imgs/bending/%s-%s.jpg')
+local = os.path.join('./image/%s-%s.jpg')
 ```
 Please change the path before you use it.
 
@@ -71,6 +71,6 @@ You can change the file name by changing 'm' & 'count', but be aware that they s
 
 Images will save in the path blow:
 ```
-getSogouImag('./image/sogou-imgs/bending/')
+getSogouImag('./image/')
 ```
 Please change the path before you use it.
