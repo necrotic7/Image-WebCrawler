@@ -12,6 +12,10 @@ or
 python sogou.py
 ```
 
+----
+BEFORE YOU USE THIS FUNCTION:
+
+
 Install the requirements first.
 
 ```
@@ -32,8 +36,8 @@ example:
 ```
 for count, i in enumerate(range(0,350, 35)):
 ```
-Now I have a 10 times loop, and I will recive 35 images in each loop.
-BE NOTICE: If your STEP is bigger than 35, it will only recive 35 images, that's the limit for now.
+Now it has a 10 times loop, and it will download 35 images in each loop.
+BE NOTICE: If your STEP is bigger than 35, it will only download 35 images, that's the limit for now.
 
 You can change the file name by changing 'x' & 'count', but be aware that they should be integer, or you can rewrite the code by your own.
 
@@ -60,7 +64,7 @@ example:
 ```
 for count, i in enumerate(range(0,350, 35)):
 ```
-Now I have a 10 times loop, and I will recive 35 images in each loop.
+Now it has a 10 times loop, and it will dowload 35 images in each loop.
 
 
 You can change the file name by changing 'm' & 'count', but be aware that they should be integer, or you can rewrite the code by your own.
