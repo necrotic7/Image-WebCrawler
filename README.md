@@ -1,6 +1,18 @@
 # Image-WebCrawler
 
-install the requirements first
+You can use this WebCrawler function to scrap images from Bing or Sogou.
+
+Input this command in your terminal to start the function.
+
+```
+python bing.py
+```
+or
+```
+python sogou.py
+```
+
+Install the requirements first.
 
 ```
 pip install -r requirements.txt
@@ -8,7 +20,7 @@ pip install -r requirements.txt
 
 For bing.py
 
-input keyword at 'async?q=' in R1 
+input keyword at 'async?q=' in R1. 
 example:
 
 ```
@@ -36,14 +48,14 @@ Please change the path before you use it.
 
 For sogou.py
 
-input keyword at '&query=' in url
+Input keyword at '&query=' in url.
 example:
 
 ```
 url = 'https://pic.sogou.com/napi/pc/searchList?mode=1&start='+start+'&xml_len=35&query=squatting'
 ```
 
-use 'range(START_AT,END_AT, STEP)' to set 'start' value and control how many images you want to scrap.
+Use 'range(START_AT,END_AT, STEP)' to set 'start' value and control how many images you want to scrap.
 example:
 ```
 for count, i in enumerate(range(0,350, 35)):
