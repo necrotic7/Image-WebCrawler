@@ -11,7 +11,7 @@ headers={'user-agent':'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537
 for count, i in enumerate(range(0,1000, 35)):
 	first = str(i)
 	try:
-		r1=requests.get('https://www.bing.com/images/async?q=people+standing&first='+ first +'&mmasync=1', headers=headers) 
+		r1=requests.get('https://www.bing.com/images/async?q=people+bending&first='+ first +'&mmasync=1', headers=headers) 
 	except:
 		print('網路錯誤')
 		break
@@ -32,17 +32,19 @@ for count, i in enumerate(range(0,1000, 35)):
 	
 	
 	
-	try:
-		x=1
-		for link in links:
-			# print('圖片連結：', link)
-			local = os.path.join('/Users/ziv.wu/Desktop/WebCrawler/image/bing-imgs/站立/%s-%s.jpg' %(count+1, x))
+	
+	x=1
+	for link in links:
+		# print('圖片連結：', link)
+		local = os.path.join('/Users/ziv.wu/Desktop/WebCrawler/image/bing-imgs/bending/%s-%s.jpg' %(count+1, x))
+		x+=1
+		try:
 			urllib.request.urlretrieve(link,local) #link是下載的網址 local是儲存圖片的檔案位址
-			x+=1
 			print('已下載%s-%s.jpg'%(count+1, x))
-	except:
-		print(link, '下載錯誤')
-		continue
+		except:
+			print(link, '下載錯誤')
+			continue
+		
 
 print('執行完畢')
 		
