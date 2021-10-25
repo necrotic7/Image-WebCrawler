@@ -14,7 +14,7 @@ def getSogouImag(path):
      
     for count, i in enumerate(range(0,350, 35)):
         start = str(i)
-        url = 'https://pic.sogou.com/napi/pc/searchList?mode=1&start='+start+'&xml_len=35&query=蹲'
+        url = 'https://pic.sogou.com/napi/pc/searchList?mode=1&start='+start+'&xml_len=35&query=立正'
         # 訪問網頁
         try:
             imgs = requests.get(url)
@@ -44,4 +44,4 @@ def getSogouImag(path):
             m = m + 1
             print('Download complete !')
  
-getSogouImag('./image/')
+getSogouImag('./image/sogou-imgs/standing/')
