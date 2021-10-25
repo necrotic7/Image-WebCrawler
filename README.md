@@ -2,7 +2,7 @@
 
 You can use this WebCrawler function to scrap images from Bing or Sogou.
 
-Input this command in your terminal to start the function.
+Input the command in your terminal to start the function.
 
 ```
 python bing.py
@@ -39,9 +39,9 @@ for count, i in enumerate(range(0,350, 35)):
 Now it has a 10 times loop, and it will download 35 images in each loop.
 BE NOTICE: If your STEP is bigger than 35, it will only download 35 images, that's the limit for now.
 
-You can change the file name by changing 'x' & 'count', but be aware that they should be integer, or you can rewrite the code by your own.
+You can change the file name by changing 'x' & 'count', but be aware that they should be integer, or you can rewrite the naming method code by your own.
 
-Images will save in the path blow:
+Images will be saved in the path blow:
 ```
 local = os.path.join('./image/%s-%s.jpg')
 ```
